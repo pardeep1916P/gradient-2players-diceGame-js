@@ -1,13 +1,61 @@
-/* Keep desktop dice spacing large */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Gradient */
+body {
+  background: linear-gradient(to right, #7928ca, #ff0080);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 20px;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  margin: 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px 8px #0000004b;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+/* Dice Section */
 .dice {
   display: inline-block;
   margin: 20px;
 }
 
-/* Button always close */
+.dice p {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Dice Images */
+img {
+  width: 180px;
+  max-width: 90%;
+  padding: 10px;
+  background-color: #ffffff1a;
+  border-radius: 15px;
+}
+
+/* Button */
 button {
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 12px 25px;
   font-size: 18px;
   color: white;
@@ -19,7 +67,20 @@ button {
   width: fit-content;
 }
 
-/* Media Queries Fix */
+button:hover {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   h1 {
     font-size: 5rem;
@@ -27,7 +88,7 @@ button {
 
   .dice {
     display: block;
-    margin: 10px auto; /* 🔥 Reduced margin */
+    margin: 12px auto;
   }
 
   .dice p {
@@ -41,7 +102,7 @@ button {
   button {
     padding: 12px 28px;
     font-size: 20px;
-    margin: 10px auto; /* 🔥 Always close */
+    margin: 10px auto;
   }
 }
 
@@ -51,7 +112,7 @@ button {
   }
 
   .dice {
-    margin: 8px auto; /* 🔥 Even tighter on small phones */
+    margin: 8px auto;
   }
 
   .dice p {
@@ -65,6 +126,6 @@ button {
   button {
     padding: 10px 24px;
     font-size: 18px;
-    margin: 8px auto; /* 🔥 Close to dice */
+    margin: 8px auto;
   }
 }
