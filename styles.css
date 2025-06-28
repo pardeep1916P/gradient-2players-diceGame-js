@@ -7,16 +7,7 @@
 
 /* Body with QR-Style Gradient */
 body {
-  background: linear-gradient(to righ/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body with Fresh Gradient */
-body {
-  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  background: linear-gradient(to right, #7928ca, #ff0080);
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
@@ -67,9 +58,9 @@ img {
 /* Button */
 button {
   display: block;
-  margin: 30px auto;
-  padding: 10px 20px;
-  font-size: 16px;
+  margin: 10px auto; /* ✔ Button placed close to images */
+  padding: 12px 25px;
+  font-size: 18px;
   color: white;
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   border: none;
@@ -86,7 +77,7 @@ button:hover {
 
 /* Footer */
 footer {
-  margin-top: 40px;
+  margin-top: 20px;
   color: #eeeeee;
   text-align: center;
   font-size: 1rem;
@@ -95,154 +86,43 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .dice {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
+  }
+
+  .dice p {
+    font-size: 2rem;
   }
 
   img {
-    width: 150px;
+    width: 200px;
   }
 
   button {
-    padding: 8px 18px;
-    font-size: 15px;
+    padding: 12px 28px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .dice p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   img {
-    width: 120px;
+    width: 170px;
   }
 
   button {
-    padding: 7px 15px;
-    font-size: 14px;
-  }
-}
-t, #7928ca, #ff0080);
-  font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Heading */
-h1 {
-  margin: 20px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 2px 2px 8px #0000004b;
-  font-size: 4rem;
-  color: #ffffff;
-}
-
-/* Dice Section */
-.dice {
-  display: inline-block;
-  margin: 20px;
-}
-
-.dice p {
-  font-size: 1.8rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-/* Dice Images */
-img {
-  width: 180px;
-  max-width: 90%;
-  padding: 10px;
-  background-color: #ffffff1a;
-  border-radius: 15px;
-}
-
-/* Button */
-button {
-  display: block;
-  margin: 30px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  width: fit-content;
-}
-
-button:hover {
-  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-  transform: scale(1.03);
-}
-
-/* Footer */
-footer {
-  margin-top: 40px;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .dice {
-    display: block;
-    margin: 20px auto;
-  }
-
-  img {
-    width: 150px;
-  }
-
-  button {
-    padding: 8px 18px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .dice p {
-    font-size: 1.5rem;
-  }
-
-  img {
-    width: 120px;
-  }
-
-  button {
-    padding: 7px 15px;
-    font-size: 14px;
+    padding: 10px 24px;
+    font-size: 18px;
   }
 }
