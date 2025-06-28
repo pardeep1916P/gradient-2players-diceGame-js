@@ -1,64 +1,13 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body with QR-Style Gradient */
-body {
-  background: linear-gradient(to right, #7928ca, #ff0080);
-  font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Heading */
-h1 {
-  margin: 20px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 2px 2px 8px #0000004b;
-  font-size: 4rem;
-  color: #ffffff;
-}
-
-/* Dice Section */
+/* Keep desktop dice spacing large */
 .dice {
   display: inline-block;
   margin: 20px;
 }
 
-.dice p {
-  font-size: 1.8rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-/* Dice Images */
-img {
-  width: 180px;
-  max-width: 90%;
-  padding: 10px;
-  background-color: #ffffff1a;
-  border-radius: 15px;
-}
-
-/* Button */
+/* Button always close */
 button {
   display: block;
-  margin: 10px auto; /* ✔ Button placed close to images */
+  margin: 10px auto;
   padding: 12px 25px;
   font-size: 18px;
   color: white;
@@ -70,20 +19,7 @@ button {
   width: fit-content;
 }
 
-button:hover {
-  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-  transform: scale(1.03);
-}
-
-/* Footer */
-footer {
-  margin-top: 20px;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 1rem;
-}
-
-/* Responsive Design */
+/* Media Queries Fix */
 @media (max-width: 768px) {
   h1 {
     font-size: 5rem;
@@ -91,7 +27,7 @@ footer {
 
   .dice {
     display: block;
-    margin: 25px auto;
+    margin: 10px auto; /* 🔥 Reduced margin */
   }
 
   .dice p {
@@ -105,12 +41,17 @@ footer {
   button {
     padding: 12px 28px;
     font-size: 20px;
+    margin: 10px auto; /* 🔥 Always close */
   }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 3.5rem;
+  }
+
+  .dice {
+    margin: 8px auto; /* 🔥 Even tighter on small phones */
   }
 
   .dice p {
@@ -124,5 +65,6 @@ footer {
   button {
     padding: 10px 24px;
     font-size: 18px;
+    margin: 8px auto; /* 🔥 Close to dice */
   }
 }
