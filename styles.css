@@ -5,75 +5,120 @@
   box-sizing: border-box;
 }
 
-/* Body with QR-like Gradient */
+/* Body with QR-Style Gradient */
 body {
   background: linear-gradient(to right, #7928ca, #ff0080);
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-/* Main Card Container */
+/* Container */
 .container {
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 500px;
   width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Heading */
 h1 {
+  margin: 20px;
   font-family: 'Lobster', cursive;
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #0000004b;
+  font-size: 4rem;
+  color: #ffffff;
 }
 
 /* Dice Section */
-.dice-section {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 25px;
-}
-
 .dice {
-  text-align: center;
+  display: inline-block;
+  margin: 20px;
 }
 
 .dice p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.8rem;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 /* Dice Images */
 img {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  max-width: 90%;
+  padding: 10px;
+  background-color: #ffffff1a;
+  border-radius: 15px;
 }
 
 /* Button */
 button {
-  background-color: #7928ca;
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 16px;
   color: white;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
   border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: fit-content;
 }
 
 button:hover {
-  background-color: #a23dc3;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  transform: scale(1.03);
 }
 
 /* Footer */
 footer {
-  margin-top: 20px
+  margin-top: 40px;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .dice {
+    display: block;
+    margin: 20px auto;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  button {
+    padding: 8px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .dice p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 120px;
+  }
+
+  button {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
